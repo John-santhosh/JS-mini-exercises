@@ -23,9 +23,9 @@ header .flex > * {
   font-weight: 800;
   font-size: 1.2rem;
 }
-:is(.simple, .hex):hover {
+:is(.rgb, .hex):hover {
   cursor: pointer;
-  color: rgba(78, 156, 26, 0.784);
+  color: rgb(0, 116, 39);
   transition: color 0.5s;
 }
 
@@ -34,7 +34,7 @@ header .flex > * {
 section .flex {
   height: calc(100vh - 4rem);
   text-align: center;
-  background: rgba(78, 156, 26, 0.52);
+  background: rgb(51, 81, 61);
 }
 
 section :is(button, h1) {
