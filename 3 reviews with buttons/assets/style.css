@@ -6,7 +6,7 @@
   box-sizing: border-box;
 }
 .container {
-  height: calc(100vh - 3rem);
+  min-height: calc(100vh - 3rem);
   width: 100vw;
   align-items: center;
 }
@@ -114,4 +114,6 @@ article button:active {
 footer {
   height: 3rem;
   text-align: center;
+  justify-content: center;
+  align-items: center;
 }
