@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css2?family=Sono:wght@400;500;600;700;800&display=swap");
+* {
+  font-family: "Sono", sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.container {
+  height: calc(100vh - 3rem);
+  width: 100vw;
+  align-items: center;
+}
+.flex {
+  display: flex;
+}
+main {
+  text-align: center;
+}
+h1 {
+  font-size: 2.5rem;
+}
+.underline {
+  height: 0.25rem;
+  background: dodgerblue;
+  width: 5rem;
+  margin: 0.6rem auto 3rem;
+}
+
+article {
+  box-shadow: 1px 1px 10px rgb(219, 219, 219);
+  padding: 1rem;
+  width: clamp(370px, 100%, 768px);
+  border-radius: 1rem;
+  margin: auto;
+}
+.image-container {
+  position: relative;
+  width: 170px;
+  height: 170px;
+  border-radius: 50%;
+  margin: 1.5rem auto;
+}
+
+.image-container::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: rgb(56, 156, 255);
+  position: absolute;
+  top: -0.25rem;
+  right: -0.5rem;
+  border-radius: 50%;
+  z-index: -1;
+}
+.image-container::after {
+  content: "";
+  position: absolute;
+  right: 100%;
+  width: 3rem;
+  height: 3rem;
+  background: grey;
+  background: url(./review.png) center/contain no-repeat;
+  border-radius: 50%;
+  left: -0.45rem;
+  top: 1rem;
+}
+img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+h4 {
+  letter-spacing: 3px;
+  text-transform: capitalize;
+}
+
+h4 ~ p {
+  /* background: red; */
+  color: grey;
+  margin-bottom: 1rem;
+}
+h4 + p {
+  color: rgb(85, 169, 252);
+  text-transform: uppercase;
+}
+
+button {
+  font-size: 1.3rem;
+  color: dodgerblue;
+  cursor: pointer;
+  outline: none;
+}
+div > button {
+  border: none;
+  background: transparent;
+  margin: 1rem 0.625rem;
+}
+article > button {
+  background: rgba(30, 143, 255, 0.196);
+  border: 1px solid rgb(0, 128, 255);
+  border-radius: 0.55rem;
+  padding: 5px 1rem;
+  transition: all 0.2s;
+}
+article > button:hover {
+  background-color: dodgerblue;
+  color: #fff;
+}
+article button:active {
+  transform: scale(1.1);
+}
+footer {
+  height: 3rem;
+  text-align: center;
+}
