@@ -67,11 +67,16 @@ randomBtn.addEventListener("click", () => {
   showPerson();
 });
 
-// setting current year
+// setting current year and changing change reviews for every 3s
 window.addEventListener("DOMContentLoaded", () => {
   let year = document.querySelector(".year");
   let date = new Date();
   year.textContent = date.getFullYear();
+  setInterval(() => {
+    if (current > reviews.length - 1) current = 0;
+    showPerson();
+    current++;
+  }, 3000);
 });
 
 // accessing every person based on the current var
