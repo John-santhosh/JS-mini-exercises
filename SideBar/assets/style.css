@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=Sono:wght@400;500;600;700;800&display=swap");
+:root {
+  --trans: all 0.3s;
+}
+* {
+  font-family: "Sono", sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: azure;
+}
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+.flex-center {
+  justify-content: space-around;
+  align-items: center;
+}
+li {
+  list-style-type: none;
+}
+nav {
+  min-height: calc(100vh - 3rem);
+  width: 350px;
+  background-color: #fff;
+  transition: var(--trans);
+  transform: translate(-100%);
+}
+body > .flex {
+  justify-content: space-between;
+}
+.fa-bars {
+  color: dodgerblue;
+  font-size: 2.5rem;
+  /* padding: 3rem; */
+  margin: 2rem;
+  animation: scale-up 1.5s linear infinite;
+}
+/* setting up layout  */
+nav.flex {
+  flex-direction: column;
+}
+div.logo {
+  flex-grow: 1;
+}
+div.links {
+  flex: 10 1 auto;
+  width: 100%;
+}
+div:has(.social-icons) {
+  flex: 1;
+}
+
+/* header logo */
+:where(.fa) {
+  cursor: pointer;
+  color: red;
+  font-size: 1.5rem;
+  transition: all 0.5s;
+}
+.fa-times:hover {
+  transform: rotate(360deg);
+}
+@keyframes scale-up {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+/* links */
+.links {
+  margin: 2rem auto;
+}
+.links li {
+  padding: 1.3rem 0 1.3rem 2rem;
+  /* background-color: aliceblue; */
+  color: grey;
+  font-size: 1.3rem;
+  transition: var(--trans);
+}
+.links li:hover {
+  color: dodgerblue;
+  padding-left: 2.5rem;
+  background-color: rgba(29, 141, 253, 0.233);
+}
+
+/* social icons */
+.social-icons {
+  /* background: palegreen; */
+  /* color: dodgerblue; */
+  justify-content: space-evenly;
+}
+.social-icons i {
+  color: dodgerblue;
+  transition: var(--trans);
+  font-size: 1.5rem;
+}
+.social-icons i:hover {
+  color: rgb(0, 54, 107);
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 3rem;
+}
+
+/* dynamic classes */
+.un-hide {
+  transform: translate(0);
+}
