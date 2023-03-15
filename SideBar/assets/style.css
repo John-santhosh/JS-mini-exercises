@@ -23,21 +23,42 @@ li {
   list-style-type: none;
 }
 nav {
+  position: relative;
+  z-index: 1;
   min-height: calc(100vh - 3rem);
-  width: 350px;
+  width: 400px;
   background-color: #fff;
   transition: var(--trans);
   transform: translate(-100%);
+  box-shadow: 1px -5px 10px rgba(128, 128, 128, 0.511);
+}
+@media (max-width: 768px) {
+  nav {
+    width: 100%;
+  }
 }
 body > .flex {
   justify-content: space-between;
 }
 .fa-bars {
+  position: fixed;
+  right: 0;
   color: dodgerblue;
   font-size: 2.5rem;
-  /* padding: 3rem; */
+  padding: 2rem;
   margin: 2rem;
   animation: scale-up 1.5s linear infinite;
+}
+@keyframes scale-up {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
 /* setting up layout  */
 nav.flex {
@@ -64,17 +85,7 @@ div:has(.social-icons) {
 .fa-times:hover {
   transform: rotate(360deg);
 }
-@keyframes scale-up {
-  0% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(1.2);
-  }
-  100% {
-    transform: scale(1);
-  }
-}
+
 /* links */
 .links {
   margin: 2rem auto;
