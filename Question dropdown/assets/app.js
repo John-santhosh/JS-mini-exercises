@@ -1,7 +1,4 @@
 let expandBtns = document.querySelectorAll(".question-expand");
-// let question = document.querySelector(".question-text");
-// let minusIcon = document.querySelector(".minus-icon");
-// let plusIcon = document.querySelector(".plus-icon");
 
 expandBtns.forEach((button) => {
   button.addEventListener("click", (e) => {
