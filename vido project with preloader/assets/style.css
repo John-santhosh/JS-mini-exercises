@@ -1,0 +1,94 @@
+@import url("https://fonts.googleapis.com/css2?family=Sono:wght@400;500;600;700;800&display=swap");
+* {
+  /* font-family: "Sono", sans-serif; */
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+:root {
+  --dark-grey: hsl(209, 61%, 16%);
+  --opacity: rgba(0, 0, 0, 0.746);
+}
+.flex {
+  display: flex;
+}
+.flex-center {
+  justify-content: center;
+  align-items: center;
+}
+
+header {
+  min-height: calc(100vh - 3rem);
+  background: var(--opacity);
+}
+.video-container {
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  width: calc(100vw - 1px);
+  height: calc(100vh - 1px);
+}
+video {
+  object-fit: cover;
+}
+h1 {
+  color: #fff;
+  font-size: 3rem;
+  text-transform: capitalize;
+}
+/* button */
+.switch-btn {
+  background: #fff;
+  padding: 0.5rem;
+  width: 150px;
+  height: 50px;
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+  outline: none;
+  border: transparent;
+  justify-content: space-around;
+  color: dodgerblue;
+  font-size: 1.2rem;
+  position: absolute;
+  bottom: 4rem;
+  left: 10%;
+}
+.switch {
+  transition: all 0.5s;
+  background-color: dodgerblue;
+  width: 50%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 10px;
+}
+/* preloader */
+.preloader {
+  position: absolute;
+  min-height: calc(100vh - 3rem);
+  color: yellow;
+  visibility: visible;
+}
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 3rem;
+  background-color: var(--opacity);
+  color: #fff;
+}
+a {
+  color: gray;
+}
+
+/* dynamic classes */
+.toggle-btn .slide {
+  left: 50%;
+}
+.hide-loader {
+  z-index: -100;
+  visibility: hidden;
+}
