@@ -1,0 +1,80 @@
+button {
+  padding: 0.325rem 1rem;
+  margin: 2rem 0.625rem;
+  border-radius: 6px;
+  outline: transparent;
+  border: 2px solid dodgerblue;
+  background-color: transparent;
+  letter-spacing: 3px;
+  transition: background 1s, color 0.5s;
+  cursor: pointer;
+}
+
+button:hover {
+  background: dodgerblue;
+  color: #fff;
+}
+// css template
+@import url("https://fonts.googleapis.com/css2?family=Sono:wght@400;500;600;700;800&display=swap");
+* {
+  font-family: "Sono", sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  /* font-family: "Poppins", sans-serif; */
+}
+:root {
+  --dark-grey: hsl(209, 61%, 16%);
+}
+.flex {
+  display: flex;
+}
+.flex-center {
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  /* width: 500px; */
+}
+main {
+  min-height: calc(100vh - 3rem);
+}
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 3rem;
+}
+
+
+
+window.addEventListener("DOMContentLoaded", () => {
+  let year = document.querySelector(".year");
+  let date = new Date();
+  year.textContent = date.getFullYear();
+});
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+	    <!-- Font awesome CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="assets/style.css" />
+  </head>
+  <body>
+    <footer>
+      <p>
+        Created by <a href="#">John Santhosh</a> &copy;
+        <span class="year"></span>
+      </p>
+    </footer>
+    <script src="assets/app.js"></script>
+  </body>
+</html>
