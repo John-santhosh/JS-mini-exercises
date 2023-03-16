@@ -8,7 +8,7 @@
 }
 :root {
   --dark-grey: hsl(209, 61%, 16%);
-  --opacity: rgba(0, 0, 0, 0.746);
+  --opacity: rgba(0, 0, 0, 0.379);
 }
 .flex {
   display: flex;
