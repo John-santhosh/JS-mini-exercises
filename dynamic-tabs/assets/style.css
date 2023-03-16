@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Sono:wght@400;500;600;700;800&display=swap");
+
+* {
+  /* font-family: "Sono", sans-serif; */
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  background: hsl(210, 36%, 96%);
+}
+:root {
+  --dark-grey: hsl(209, 61%, 16%);
+}
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+.flex-center {
+  justify-content: center;
+  align-items: center;
+}
+.underline {
+  height: 0.25rem;
+  background: dodgerblue;
+  width: 5rem;
+  margin: 0.6rem auto 3rem;
+}
+.container {
+  width: clamp(375px, 90%, 1200px);
+  margin: auto;
+}
+main {
+  min-height: calc(100vh - 3rem);
+}
+/* title */
+.title {
+  text-align: center;
+  padding: 3rem 0 5rem;
+}
+h1 {
+  font-size: 2.5rem;
+  color: var(--dark-grey);
+}
+/* article */
+.flex.container {
+  gap: 1.5rem;
+}
+.flex.container > * {
+  flex: 1 1 450px;
+}
+.about-img {
+  flex-basis: 520px;
+}
+.about {
+  /* flex: 1 1 300px; */
+  background: #ffffff;
+  border-radius: 0.625rem;
+  border-radius: 10px;
+  overflow: hidden;
+}
+/* button container */
+
+.button-container.flex > * {
+  flex: 1;
+  padding: 0.825rem 0;
+  cursor: pointer;
+  font-size: 1.1rem;
+  outline: transparent;
+  border: none;
+  transition: all 0.4s;
+}
+
+.tab-btn {
+  background-color: #fff;
+}
+.tab-btn:hover {
+  color: rgb(71, 135, 139);
+  background-color: hsl(206, 100%, 90%);
+}
+
+/* about content */
+.content {
+  padding: 1.3rem;
+  display: none;
+}
+h4 {
+  text-transform: capitalize;
+  /* margin-:  */
+}
+.content p {
+  color: rgb(121, 144, 144);
+  font-size: 1rem;
+  font-weight: 300;
+  margin: 0.5rem 0 1.5rem;
+}
+/* footer */
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 3rem;
+}
+
+:where(img) {
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* dynamic classes */
+.content.active {
+  display: block;
+}
+.tab-btn.active {
+  background-color: dodgerblue;
+}
