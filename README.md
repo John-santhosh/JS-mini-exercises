@@ -1,6 +1,9 @@
-# DOM projects 
+# DOM projects
+
+[Live site](https://dom-projects-john.netlify.app/)
 
 ## menu list
+
    <ol>
         <li>This is a webpage which show the menu of a hotel</li>
         <li>used various array method to dynamically add content for to the page</li>
@@ -9,12 +12,14 @@
     </ol>
 
 ## video project with preloader
+
   <ol>
           <li>This is a video section page has a toggle button for pausing and resuming the video</li>
           <li>This contains a preloader which will be visible when the content of the page gets delayed to load</li>
     	</ol>
 
 ## Dynamic Tabs
+
   <ol>
 	  <li>This is a dynamic section of tabs which show only the tab which is clicked by the user</li>
 	  <li>used event bubbling to find which button is being clicked and remove the styles which are applied to other elements</li>
@@ -22,6 +27,7 @@
 	</ol>
 
 ## Paragraph generator
+
 <ol>
 	  <li>This is a random para generator which generates paragraph from an array of paragraph</li>
 	  <li>This do not accept negative values and return a singe para when there is no input or the given input is 0 .</li>
