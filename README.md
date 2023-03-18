@@ -1,4 +1,4 @@
-##menu list
+# menu list
 -This is a webpage which show the menu of a hotel
 -used various array method to dynamically add content for to the page
 -buttons will automatically updated when a new category of item is a added
