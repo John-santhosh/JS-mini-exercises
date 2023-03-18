@@ -94,10 +94,8 @@ let content = [
 const parent = document.querySelector(".parent");
 let result = content
   .map(function (item) {
-    // console.log(item.);
-
     return ` <!-- start of single card 1-->
-          <div class="col-xl-4 col-lg-6 mb-md-4">
+          <div class="col-xl-4 col-lg-6 mb-md-4 cards">
             <div class="card shadow-sm">
               <img
                 class="bd-placeholder-img card-img-top object-fit-cover"
@@ -129,8 +127,7 @@ let result = content
                       <a
                         href="${item.live}"
                         class="text-decoration-none text-black fs-5"
-                        >Live</a
-                      >
+                        >Live</a>
                     </button>
                   </div>
                 </div>
@@ -138,6 +135,14 @@ let result = content
             </div>
           </div>
           <!-- end of single card  -->`;
-  }).join('')
+  })
+  .join("");
 
 parent.innerHTML = result;
+
+// year
+window.addEventListener("DOMContentLoaded", () => {
+  let year = document.querySelector(".year");
+  let date = new Date();
+  year.textContent = date.getFullYear();
+});

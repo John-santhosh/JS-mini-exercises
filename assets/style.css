@@ -1,3 +1,7 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Sono:wght@400;500;600;700;800&display=swap");
+* {
+  font-family: "Poppins", sans-serif;
+}
 .underline {
   height: 0.25rem;
   background: dodgerblue;
@@ -8,9 +12,30 @@
 button img {
   border-radius: 50%;
 }
+button {
+  border-radius: 1rem;
+}
+.btn-group > button {
+  border-radius: 1rem;
+}
+.btn-group > button:hover a {
+  color: #fff !important;
+}
 
-.parent h4{
+.cards {
+  transition: all 0.4s;
+}
+.cards:hover {
+  transform: scale(1.05);
+}
+.parent h4 {
   text-transform: capitalize !important;
   font-size: 1.5rem;
   letter-spacing: 2px;
+}
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 3rem;
 }
