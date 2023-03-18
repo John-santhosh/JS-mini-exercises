@@ -4,7 +4,7 @@
 -buttons will automatically updated when a new category of item is a added
 -used flex for page layout
 
-##video project with preloader
+## video project with preloader
 -This is a video section page has a toggle button for pausing and resuming the video
 -This contains a preloader which will be visible when the content of the page gets delayed to load
 
