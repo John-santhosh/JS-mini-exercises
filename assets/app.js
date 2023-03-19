@@ -95,7 +95,7 @@ const parent = document.querySelector(".parent");
 let result = content
   .map(function (item) {
     return ` <!-- start of single card 1-->
-          <div class="col-xl-4 col-lg-6 mb-md-4 cards">
+          <div class="col-xl-4 col-lg-6 mb-md-4 cards mb-3">
             <div class="card shadow-sm">
               <img
                 class="bd-placeholder-img card-img-top object-fit-cover"
